@@ -2,7 +2,6 @@
 	margin: 0;
 }
 body{
-	width: 100%;
 	background-color: #bfbfbf;
 	margin-left: 30px;
 	margin-right: 30px;
@@ -41,8 +40,6 @@ h2 {
 }
 
 aside {
-	width: 20%;
-	height: 100%;
 	float: right;
 	text-align: left;
 	background-color: white;
@@ -50,7 +47,7 @@ aside {
 }
 
 aside img{
-	width: 50%;
+	width: 130px;
 	height: auto;
 	padding: 20px 0 20px 0;
 }
