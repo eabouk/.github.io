@@ -89,10 +89,16 @@ header{
 	margin: 0;
 	display: block;
 }
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 650px) {/*ipad*/
     .top-nav ul{
+    	display:flex;
         background-color: #211D24;/*same color as above*/
-        display:inline-block;
+        justify-content: center;
+    }
+
+    .top-nav ul li{
+    	display: inline-block;
+    	display:table-cell;vertical-align:bottom;
     }
 }
 
