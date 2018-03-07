@@ -5,6 +5,18 @@
 	<title>Challenge 3</title>
     <script type="text/javascript">
     function checkForm(){
+
+      var straw = document.getElementById('opt-straw');
+      var blue = document.getElementById('opt-blue');//.value;
+      //console.log(straw)
+      if (straw.checked || blue.checked){
+        return true;
+      }
+
+      else{
+        window.alert('PICK A FRUIT!!!');
+        return false;
+      }
     	// Write a function that ensures at least one but ONLY one radio button is selected.  Make sure the form action is not performed if either field is blank.
 		} 
     </script>
@@ -18,10 +30,10 @@
         <div>
           What's your favorite berry?: 
           <label>
-            <input type="radio" value = "s" id="opt-straw"> Strawberries
+            <input type="radio" value = "s" id="opt-straw" name = "berry"> Strawberries
           </label>
           <label>
-            <input type="radio" value = "b" id="opt-blue"> Blueberries
+            <input type="radio" value = "b" id="opt-blue" name = "berry"> Blueberries
         </label>
       </div>
   </fieldset>
