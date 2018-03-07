@@ -2,16 +2,33 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
 	<title>Challenge 4</title>
     <style>
     .errormsg { 
         /*font: Use a cool Google font*/
+        font-family: 'Bowlby One SC', cursive;
     	color:red;
     	display:none; } 
     </style>
     
     <script type="text/javascript">
     function checkForm(){
+        var fullname = document.getElementById('fullname').value;
+        var streetaddr = document.getElementById('streetaddr').value;
+
+        if (fullname == ''){
+            nameerrormsg.style.display = 'block';
+            window.alert('PLEASE ENTER YOUR NAME');
+            return false;
+        }
+
+        else if (streetaddr == '' && fullname !== ''){
+            addrerrormsg.style.display = 'block';
+            nameerrormsg.style.display = 'none'; //Gets rid of previous error message 
+            window.alert('PLEASE ENTER AN ADDRESS');
+            return false;
+        }
     	// Write a function that displays the appropriate error message(s) if a field is left blank.  Make sure the form action is not performed if either field is blank.
     }  
     </script>
