@@ -44,13 +44,15 @@
 
 <body>
 	<script type="text/javascript">
-	function upDate(previewPic){
+	function upDate(i){
 		//will pass src into previewPic
-		console.log(previewPic.src);
-		url = previewPic.src;
-		div = document.getElementById('image');
+		//console.log(previewPic.src)
+		document.getElementById('image').style.backgroundImage="url("+i.src+")";//finish writing this?
+		document.getElementById('image').innerHTML=i.alt;
 		//console.log(div.style);
-		image.style.background = 'url';
+		//console.log(div)
+		//document.div.style.backgroundImage = 'url(previewPic.src)';
+		
 		
  /* In this function you should 
     1) change the url for the background image of the div with the id = "image" 
@@ -79,20 +81,31 @@
 		</div>
 
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
-		<img class = "preview" 
+		<img class = "preview" tabindex="1" 
+			onmouseover= 'upDate(this)';
+			onfocus = 'upDate(this)';
+			onblur = 'unDo()';
+			onmouseleave="unDo()"; 
 			alt = "Styling with a Bandana" 
 			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg"
-			onmouseover= 'upDate(this)';
 			>
 
 
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->	
-		<img class = "preview" 
+		<img class = "preview" tabindex="2"
+			onmouseover= 'upDate(this)';
+			onfocus = 'upDate(this)';
+			onblur = 'unDo()';
+			onmouseleave="unDo()"; 
 			alt = "With My Boy" 
 			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG";>
 	
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
-		<img class = "preview" tabindex = "1" 
+		<img class = "preview" tabindex = "3" 
+			onmouseover= 'upDate(this)';
+			onfocus = 'upDate(this)';
+			onblur = 'unDo()';
+			onmouseleave="unDo()"; 
 			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" 
 			alt = "Young Puppy";>
 </body>
