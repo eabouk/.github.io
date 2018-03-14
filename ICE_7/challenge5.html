@@ -35,11 +35,32 @@
 		text-align: center;
 	}
 	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+   $(document).ready(function(){ 
+      //Use the .attr method to get attributes
+      
+      // Use the .text method to update the content:
+      // selector.text(newValue)
 
-	<script type="text/javascript">
-	// I used Two functions here.  Starter idea at: 
-	// https://codepen.io/ColleenEMc/pen/XmZzWw
+      // Use the .css method to update the content:
+      // selector.css(attribute, newValue)
+
+
+        $(".preview" ).on('focus mouseover',function() {
+  
+        $("#image").text($(this).attr("alt"));
+        $("#image").css('background-image', 'url("' + $(this).attr("src") + '")');
+        })
+
+        $(".preview" ).on('blur mouseleave',function() {
+        $("#image").text("Hover over an image below");
+        $("#image").css('background-image', '');
+      })
+    });
+]
 	</script>
+
 </head>
 
 <body>
