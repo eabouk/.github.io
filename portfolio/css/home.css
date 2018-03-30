@@ -64,7 +64,7 @@ nav ul li:hover{
 	 display: block;
 	 text-align: center;
     /* The image used */
-    background: url("/img/Cliff_Bells_SGJO.jpg") no-repeat center center scroll;
+    background: url("img/Cliff_Bells_SGJO.jpg") no-repeat center center scroll;
 	/*margin-left: auto;
 	margin-right: auto;*/
     /* Full height */
