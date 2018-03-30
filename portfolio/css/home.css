@@ -1,0 +1,272 @@
+body, html {
+    height: 100%;
+}
+
+.font{
+  font-family: 'Poiret One', cursive;
+  color: white;
+  text-align: center;
+/*  background-color: black;*/
+}
+
+nav{
+	height: 20%;
+	width: 100vw;
+	background-color: black;
+	text-align: left;
+}
+
+nav ul{
+  display: inline;
+
+} 
+nav ul li a{
+    padding: .5em;
+    text-decoration: none;
+}
+
+nav ul li:hover{
+	background-color:#808080;
+	color: black;
+	text-decoration: underline; 
+}
+/* Add an active class to highlight the current page */
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+/*GET AN ICON FOR YOUR NAV BAR!*/
+@media screen and (min-width: 400px) {
+  nav ul li{
+    display: block;
+  	text-align:center;
+    background-color: black;
+    padding: .5em;
+
+  }
+  nav ul{
+    text-align: center;
+    display: inline;
+  }
+
+}
+@media screen and (min-width: 600px) {
+  nav ul li {display: inline-block;}
+  .topnav a.icon {
+    float: right;
+    display: none;
+
+  }
+
+}
+
+ .jazz_contemp {
+	 display: block;
+	 text-align: center;
+    /* The image used */
+    background: url("/img/Cliff_Bells_SGJO.jpg") no-repeat center center scroll;
+	/*margin-left: auto;
+	margin-right: auto;*/
+    /* Full height */
+    height: auto;
+    width: 100vw; 
+    background-color: black;
+
+    background-size: cover;
+    background-size: 100%;
+    margin-bottom: 5%;
+    font-family: 'Poiret One', cursive;
+    color: white;
+
+
+}
+
+.about{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+	width: 100vw;
+	height: 100vh;
+	/*top: 50%;
+	left: 25%;
+	right: 25%;
+	bottom: 50%;*/
+	background-color:black;
+	position: absolute;
+	text-align: center;
+  /*grid-column: 2/3;*/
+
+}
+.about p{
+/*	padding: 1%;*/
+  grid-column: 2/ span 4;
+  font-size: 1.2em;
+
+	color: white;
+	text-align: center;
+	margin-left: 10%;
+	margin-right: 10%;
+	font-family: 'Poiret One', cursive;
+}
+
+/*@media screen and (min-width: 600px) {
+  .about p{
+    grid-column: 3 / span 5;
+  }*/
+/*p{
+  grid-column: 2/ span 4;
+}*/
+.heading{
+	text-align: center;
+	color: #ffffff;
+	padding: 10%;
+	font-family: 'Poiret One', cursive;
+	
+}
+.logo{
+	text-align: right;
+	font-family: Arial;
+}
+
+#home_footer{
+  margin-top: 100vh;
+  background-color: black;
+  font-color: white;
+  font-size: 1em;
+  display: block;
+  width: 100vw;
+  height: 10vh;
+}
+
+
+/*MEDIA PAGE CSS*/
+.media{
+  height: 100vh;
+  width: 100vw;
+  /*background-color: black;*/
+  /*display: grid;*/
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  grid-template-rows: 1fr 1fr 1fr;
+  /*padding: 2em;*/
+}
+div.media{
+  padding: 5%;
+  border: 5%;
+  background-color: black;
+  display: grid;
+/*  height: 100vh;*/
+}
+
+div.media .itunes{
+
+  column-span: 6 / span 9;
+}
+.media h3{
+  display: block;
+  margin-top: 20%;
+  grid-row: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .media h3{
+    width: 100vw;
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    padding: 5%;
+  }
+
+  iframe#itunes{
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 100%;
+  }
+
+}
+
+#itunes{
+  grid-column-start: 4;
+  grid-column-end: 9;
+  padding: 2em;
+  width: 50vw;
+/*  height: 100vh;*/
+  /*padding-left: 3em;*/
+}
+div#myCarousel.carousel.slide{
+  height: 50vh;
+  position: relative;
+  background-color: #962121;
+  padding: 1%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+div.carousel-inner{
+  height: auto;
+  margin-left: 40%;
+  background-color: black;
+  column-span: 2/ 4;
+  position:relative;
+}
+
+div.carousel-inner .item img{
+  height: auto;
+  width: auto;
+
+}
+
+div.soundcloud{
+  background-color: black;
+/*  height: 20vh;
+  height: 100vh;
+  width: 100vw;*/
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+}
+
+div.soundcloud h3.font{
+  /*padding: 10%;*/
+  margin-top: 30%;
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row: 2/3;
+}
+
+.soundcloud iframe{
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row: 2/3;
+}
+@media screen and (max-width: 600px) {
+  div.soundcloud h3.font{
+    width: 100vw;
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    padding: 5%;
+  }
+
+  .soundcloud iframe{
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    padding: 5%;
+   /* width: %;*/
+  }
+
+}
+
+#media_footer{
+  font-size: 1em;
+  display: block;
+  width: 100vw;
+  height: 10vh;
+  background-color: black;
+  padding: 5%;
+}
+
+
+
+
