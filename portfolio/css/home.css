@@ -216,7 +216,7 @@ div.carousel-inner .item img{
 }*/
 
 .carousel-item img{
-  width: 40vh;
+  width: 40%;
   margin:0 auto;
   padding-top: 5%;
 }
