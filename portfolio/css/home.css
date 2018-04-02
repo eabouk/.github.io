@@ -60,11 +60,11 @@ nav ul li:hover{
 
 }
 
- div.jazz_contemp {
+ div.jazz_contemp{
 	 display: block;
 	 text-align: center;
     /* The image used */
-    background: url("img/Cliff_Bells_SGJO.jpg") no-repeat center center scroll;
+    background: url("../img/Cliff_Bells_SGJO.jpg") no-repeat center center scroll;
 	/*margin-left: auto;
 	margin-right: auto;*/
     /* Full height */
@@ -268,6 +268,8 @@ div.soundcloud h3.font{
 }
 
 /*HIGHLIGHTS CSS IS BELOW*/
+/*NEED TO FIX THE TEXT:
+add a media query that makes the text get more centered when the screen is smaller */
 #highlights_head{
   background-color: black;
   /*height: 100%;*/
@@ -287,6 +289,7 @@ div.soundcloud h3.font{
 }
 
 /*SHOWS CSS IS BELOW*/
+/*Will fix to make responsive soon...*/
 .calendar{
   background-color: black;
 }
@@ -297,5 +300,15 @@ div.soundcloud h3.font{
   align-content: center;
 }
 
+#shows_footer{
+  margin-top:0;
+  padding:5%;
+  background-color: black;
+}
 
+/*CONTACT ME CSS IS BELOW*/
+.contact{
+  background-color: black;
+  padding: 5%;
+}
 
