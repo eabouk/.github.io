@@ -148,6 +148,13 @@ nav ul li:hover{
   grid-template-rows: 1fr 1fr 1fr;
   /*padding: 2em;*/
 }
+
+#photocred{
+  padding: 5%;
+  text-align: center;
+  background-color: black;
+  font-size: .8em;
+}
 div.media{
   padding: 5%;
   border: 5%;
@@ -193,27 +200,6 @@ div.media .itunes{
 /*  height: 100vh;*/
   /*padding-left: 3em;*/
 }
-/*div#myCarousel.carousel.slide{
-  height: 50vh;
-  position: relative;
-  background-color: #962121;
-  padding: 1%;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-}
-div.carousel-inner{
-  height: auto;
-  margin-left: 40%;
-  background-color: black;
-  column-span: 2/ 4;
-  position:relative;
-}
-
-div.carousel-inner .item img{
-  height: auto;
-  width: auto;
-
-}*/
 
 .carousel-item img{
   width: 40%;
@@ -320,4 +306,39 @@ add a media query that makes the text get more centered when the screen is small
   background-color: black;
   padding: 5%;
 }
+
+.mailing{
+  text-align: left;
+  font-family: 'Poiret One', cursive;
+  color: white;
+  background-color: black;
+  padding: 5%;
+  height: 40vh;
+}
+
+div.mailing p{
+  padding-left: 3%;
+}
+
+#contact_footer{
+/*  padding-top: 10%;
+  height: 10vh;*/
+  margin-top:10%;
+/*  margin-top: 100vh;*/
+/*  padding-bottom:2%;*/
+  background-color: black;
+  width: 100%;
+/*  width: 100vw;*/
+  
+}
+
+/*TO DO
+
+1. Make Media, Highlights and Contact all responsive with their content
+2. Validate code
+3. See if you can find a better calendar or fix the one you have to make it better 
+4. Clean up code
+
+*/
+
 
