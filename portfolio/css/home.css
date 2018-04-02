@@ -8,7 +8,16 @@ body, html {
   text-align: center;
 /*  background-color: black;*/
 }
-
+.logo{
+  padding: 1%;
+  padding-right: 2%;
+}
+.logo img{
+  background-color: #b30000;
+  float: right;
+  border-radius: 2em;
+  padding: .5em;
+}
 nav{
 	height: 20%;
 	width: 100vw;
