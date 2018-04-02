@@ -267,6 +267,35 @@ div.soundcloud h3.font{
   padding: 5%;
 }
 
+/*HIGHLIGHTS CSS IS BELOW*/
+#highlights_head{
+  background-color: black;
+  /*height: 100%;*/
+  padding: 5%;
+}
+
+#highlights_body{
+  background-color:black;
+  text-align: center;
+  padding: 2%;
+}
+
+#highlights_footer{
+  margin:0;
+  padding:2%;
+  background-color: black;
+}
+
+/*SHOWS CSS IS BELOW*/
+.calendar{
+  background-color: black;
+}
+
+.calendar iframe{
+  margin-left: 15%;
+  margin-top: 5%;
+  align-content: center;
+}
 
 
 
