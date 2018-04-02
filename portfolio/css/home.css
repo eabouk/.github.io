@@ -193,7 +193,7 @@ div.media .itunes{
 /*  height: 100vh;*/
   /*padding-left: 3em;*/
 }
-div#myCarousel.carousel.slide{
+/*div#myCarousel.carousel.slide{
   height: 50vh;
   position: relative;
   background-color: #962121;
@@ -213,7 +213,16 @@ div.carousel-inner .item img{
   height: auto;
   width: auto;
 
+}*/
+
+.carousel-item img{
+  width: 40vh;
+  margin:0 auto;
+  padding-top: 5%;
 }
+ .carousel-item{
+  background: black;
+ }
 
 div.soundcloud{
   background-color: black;
