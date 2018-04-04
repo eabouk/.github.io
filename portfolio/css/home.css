@@ -223,6 +223,11 @@ nav ul li a:hover{
   background-color: black;
   padding: 1%;
 }
+
+#media-logo{
+  height: 5em;
+  width: auto;
+}
 #photocred{
   padding: 5%;
   text-align: center;
