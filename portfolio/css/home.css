@@ -69,6 +69,7 @@ nav ul li a:hover{
   color: black;
   text-decoration: underline; 
   border-radius: .7em;
+  transition: .4s;
 }
 /* Add an active class to highlight the current page */
 .active {
