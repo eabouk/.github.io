@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/home.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="apple-touch-icon" sizes="57x57" href="favicon.ico/apple-icon-57x57.png">
@@ -21,18 +22,17 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
-	<meta charset="UTF-8">
 
 <!--BOOT STRAP THINGS! Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<title>Media</title>
 
-</style>
 </head>
-<header>
+<body>
+	<header>
 		<nav><!--Add classes-->
 			<div class="logo">
-				<a href='index.html'><img id='media-logo' src = './img/logo.png' alt='Eigth Note Logo' tabindex='6'></a>
+				<a href='index.html' tabindex='6'><img id='media-logo' src = './img/logo.png' alt='Eigth Note Logo'></a>
 			</div>
 	       <ul>
 	            <li><a class = "font" href="index.html" tabindex='1'>Home</a></li>
@@ -44,7 +44,6 @@
 
 		</nav>
 	</header>
-	<body>
 	<div id='mediahead'>
 		<h1 class = "font" tabindex = '7'>Media</h1>
 	</div>
@@ -90,12 +89,14 @@
 
 	<div class = "media">
 		<h2 class = "font" tabindex="11">Check out Emma's latest release on Itunes!</h2>
-		<iframe class = 'itunes' src="//tools.applemusic.com/embed/v1/album/1148476471?country=us" height="500px" width="100%" frameborder="0" tabindex='12'></iframe>
+		<!--the validator I used does not like the height and width of my iframe here... please ignore.-->
+		<iframe class = 'itunes' src="//tools.applemusic.com/embed/v1/album/1148476471?country=us" height="500vh" width="100%" tabindex='12'></iframe>
 	</div>
 
 	<div class= 'soundcloud'>
-		<h2 class = 'font' tabindex="13">"Love I Feel", <br> words & music by Emmalee, <br>recorded April 2016</h2></br></br>
-        <iframe padding-left="40%" width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/258037977&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+		<h2 class = 'font' tabindex="13">"Love I Feel", <br> words & music by Emmalee, <br>recorded April 2016</h2>
+		<!--The validator I used does not like the scrolling and frameborder attributes below... please ignore.-->
+        <iframe  width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/258037977&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 	</div>
 <footer>
 	<div>
