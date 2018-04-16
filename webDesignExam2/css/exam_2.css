@@ -1,3 +1,6 @@
+body{
+	background: url('../images/sun-pattern.png');
+}
 div.img_area{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
