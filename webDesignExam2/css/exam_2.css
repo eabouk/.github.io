@@ -3,13 +3,24 @@ div.img_area{
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-div.img1{
+div.div1{
+	border: blue;
 	grid-column-start: 1;
 	grid-column-end: 3;
+	border: blue;
+    border-width: 5px;
+    align-content: center;
 	
 }
 
-div.img2{
+div.div2{
+	border:blue;
 	grid-column-start: 3;
 	grid-column-end: 5;
+}
+
+img.img1{
+	padding: 5%;
+    border: blue;
+    border-width: 5px;
 }

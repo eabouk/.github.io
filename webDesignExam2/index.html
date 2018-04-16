@@ -4,17 +4,37 @@
 	<meta charset="UTF-8">
 	<title>339 Exam 2</title>
 	<link rel='stylesheet' type='text/css' href='./css/exam_2.css'>
+<script type='text/javascript'>
+	function hideImage(){
+		var img1 = document.getElementById('img1');
+		// alert('hELLO');
+		var img2 = document.querySelector('.div2');
+
+		img1.style.display = 'none';
+		img2.style.gridColumn= '2 / span 4';
+	}
+
+	function showImage(){
+		var img1 = document.getElementById('img1');
+		var img2 = document.querySelector('.div2');
+		img1.style.display = 'block';
+		img1.style.gridColumn = '1 / span 3';
+		img2.style.gridColumn = '3 / span 5';
+
+	}
+</script>
 </head>
 <body>
 	<h1>Emma Aboukasm</h1>
 	<div class='img_area'>
-		<div class='img1'>
-			<img src='./images/examPic.JPG' alt='aligator and smiles'>
+		<div class='div1'>
+			<img id = 'img1' class='img1' src='./images/examPic.JPG' alt='aligator and smiles'>
 		</div>
-		<div class='img2'>
-			<img src='./images/UMSI-logo.jpg' alt='UMSI Logo'>
+		<div class='div2'>
+			<img id = 'img2' class='img2' src='./images/UMSI-logo.jpg' alt='UMSI Logo'>
 		</div>
 	</div>
-	
+	<button type="submit" onclick='hideImage(this)'>Hide Image</button>
+	<button type="submit" onclick='showImage(this)'>Show Image</button>
 </body>
 </html>
