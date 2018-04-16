@@ -7,7 +7,7 @@ div.img_area{
 }
 
 div.div1{
-	border: blue;
+/*	border: solid blue;*/
 	grid-column-start: 1;
 	grid-column-end: 3;
 	border: blue;
@@ -15,7 +15,10 @@ div.div1{
     align-content: center;
 	
 }
-
+img{
+	width: 43vw;
+	height: auto;
+}
 div.div2{
 	border:blue;
 	grid-column-start: 3;
@@ -24,6 +27,12 @@ div.div2{
 
 img.img1{
 	padding: 5%;
-    border: blue;
+	border: solid blue;
     border-width: 5px;
+}
+
+img.img2{
+	padding: 5%;
+	border: solid blue;
+	border-width: 5px; 
 }
